@@ -1,0 +1,78 @@
+/* aleo-300-light */
+@font-face {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/aleo-light-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-light-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-300-lightitalic */
+@font-face {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 300;
+  src: local(""), url("../fonts/aleo-lightitalic-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-lightitalic-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-400-regular */
+@font-face {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/aleo-regular-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-regular-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-400-italic */
+@font-face {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/aleo-italic-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-italic-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700-italic */
+@font-face {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("../fonts/aleo-bolditalic-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-bolditalic-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700-regular */
+@font-face {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/aleo-bold-webfont.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aleo-bold-webfont.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* josefin-sans-regular - latin-ext_latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/josefin-sans-v20-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/josefin-sans-v20-latin-ext_latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
