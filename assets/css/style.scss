@@ -99,12 +99,13 @@ img {
                 width: 150px;
                 border: 2px solid #fff;
                 @include fz(14);
-                line-height: 26px;
-                .btn_search {
+                line-height: 26px; 
+                .icon-search {
                     width: 20px;
-                    height: 20px;                    
-                    margin: 0 0 0 15px;                    
-                }                           
+                    &:before {
+                        margin-left: 0.5em;
+                    }
+                }                    
             }
         }
         .header_text {
