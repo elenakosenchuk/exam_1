@@ -1,5 +1,49 @@
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1850px) {
+    .header_section {
+        padding: 150px 0 0 0;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .header_section {
+        padding: 100px 0 0 0;
+    .header_container {
+        .header_logo {
+            width: 15%;
+            height: 20px;
+            margin-bottom: 25px;
+            }
+        .search_form {
+            margin-bottom: 50px;
+            }
+        }
     
+    }    
+}
+
+@media screen and (max-width:1150px) {
+    .header_section .header_container {
+        .header_logo {
+            width: 180px;
+            height: 22px;
+        }
+        .search_form {
+            .search-form_textarea {
+                width: 400px;
+            }
+        }
+    }
+
+    .menu .menu_container #main_menu {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    .menu .menu_container #main_menu {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:810px) {
@@ -8,5 +52,45 @@
     }
     #hamburger_menu {
         display: block;
+    }
+    .menu .menu_container .menu_logo {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header_section .header_container .search_form .search-form_textarea {
+        width: 300px;
+    }
+    .menu .menu_container .menu_logo {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header_section .header_container .search_form {
+    .search-form_textarea {
+        width: 250px;
+        letter-spacing: 1px;
+        }
+    .btn_small {
+        width: 100px;
+        padding-left: 5px;
+        .btn_search {
+            display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header_section .header_container .search_form {
+    .search-form_textarea {
+        width: 230px;
+        letter-spacing: 0.5px;
+        }
+    .btn_small {
+        width: 75px;
+        }
     }
 }
