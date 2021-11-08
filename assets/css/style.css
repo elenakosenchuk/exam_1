@@ -139,8 +139,8 @@ img {
   background-color: #496bfe;
 }
 .header_section .header_container .search_form .btn_small:hover .btn_search {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 .header_section .header_container .header_text {
   text-transform: capitalize;
@@ -382,4 +382,45 @@ img {
 .rewiev .rewiev_container .rewiev_content .rewiev_text p {
   line-height: 26px;
   text-indent: 30px;
+  letter-spacing: -0.8px;
+}
+
+footer {
+  background-color: #232323;
+  padding: 120px 0 60px 0;
+  color: #fff;
+}
+footer .footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_content .footer_logo {
+  width: 15%;
+  margin-bottom: 10px;
+}
+footer .footer_content .footer_text {
+  font-family: "Josefin Sans";
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+footer .footer_content .networks {
+  width: 16%;
+}
+footer .footer_content .networks .networks_list {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_content .networks .networks_list .networks_list-item {
+  display: inline-block;
+  width: 100%;
+}
+footer .footer_content .networks .networks_list .networks_list-item a {
+  color: #fff;
+  width: 100%;
+}
+footer .footer_content .networks .networks_list .networks_list-item a:hover {
+  color: #5474fd;
 }
