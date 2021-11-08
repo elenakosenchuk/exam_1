@@ -69,7 +69,10 @@ img {
 }
 
 .header_section {
-  background: url(../images/header-bg.jpg) center center/cover no-repeat;
+  background-color: #5474fd;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: calc(100vh - 175px);
   padding: 260px 0 0 0;
 }
@@ -201,7 +204,10 @@ img {
 }
 
 .choose {
-  background: url(../images/why-choose-bg.jpg) center center/cover no-repeat;
+  background-color: #ccc;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(51, 51, 51, 0.8);
   padding: 120px 0 95px 0;
 }
@@ -216,7 +222,7 @@ img {
   grid-area: span 2/span 1;
   padding: 85px 70px 0 0;
 }
-.choose .content_wrapper .text_block h1 {
+.choose .content_wrapper .text_block h2 {
   font-size: 2.25rem;
   line-height: 26px;
   text-transform: capitalize;
@@ -323,12 +329,18 @@ img {
 }
 
 .content_block-left {
-  background: url(../images/bg-section1.jpg) center center/cover no-repeat;
+  background-color: #f7c7c7;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 230px 0 105px 0;
 }
 
 .content_block-rigth {
-  background: url(../images/bg-section2.jpg) center center/cover no-repeat;
+  background-color: #f7c7c7;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 230px 0 105px 0;
 }
 .content_block-rigth .container_block-right {
@@ -337,7 +349,10 @@ img {
 }
 
 .rewiev {
-  background: url(../images/rewie-bg.jpg) center center/cover no-repeat;
+  background-color: #999999;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(51, 51, 51, 0.8);
   padding: 115px 0 200px 0;
 }
