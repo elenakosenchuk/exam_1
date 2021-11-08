@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhromaon</title>
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/font-icons/css/my_icons.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -19,12 +16,17 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/font-icons/css/my_icons.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.min.css">
+    
 </head>
-<body>
+<body class="open">
     <header class="header_section lazy-bg" data-src="assets/images/header-bg.jpg">
         <div class="container header_container">
             <div class="logo header_logo">
-                <a href="#"><img src="assets/images/logo-header.png" alt="Logo picture"></a>
+                <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
             </div>
             <div class="subtext">Safe Travel Anywhere</div>
             <form class="search_form" action="#" method="get" target="_blank">
@@ -35,10 +37,33 @@
         </div>
     </header>
 
+    <div id="mobile_menu_wrap">
+        <div class="sidemenu_top">
+            <div class="mobile_logo">
+                <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
+            </div>
+            <button class="hamburger hamburger--spring" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+        </div>
+        <nav class="sidemenu">
+            <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Travel with us</a></li>
+                <li><a href="#">Contact us</a></li>                
+            </ul>
+        </nav>
+    </div>
+    <div id="page_overlay"></div>
+
+
     <div class="menu">
         <div class="container menu_container">
             <div class="logo menu_logo">
-                <a href="#"><img src="assets/images/logo-header.png" alt="Logo picture"></a>
+                <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
             </div>
             <nav id="main_menu">
                 <ul class="menu_list">
@@ -48,6 +73,15 @@
                     <li class="menu_list-item"><a href="#">Contact us</a></li>                
                 </ul>
             </nav>
+
+            <div id="hamburger_menu">
+                <button class="hamburger hamburger--spring" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>  
+            </div>
+        </div>
         </div>
     </div>
 
@@ -120,7 +154,7 @@
 <footer>    
     <div class="container footer_content">
         <div class="footer_logo">
-            <a href="#"><img src="assets/images/logo-header.png" alt="Logo picture"></a>
+            <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
         </div>
         <div class="footer_text"><p>Safe travel anywhere</p></div>
         <div class="networks">
@@ -135,6 +169,35 @@
     </div>
 </footer>
 
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/lazyload.js"></script>
+
+<script>
+    $(function() {
+        $(".hamburger, #page_overlay").on('click', function(){
+            $(".hamburger").toggleClass("is-active");
+            $("body").toggleClass("open");
+        });
+
+
+        //     $('input, select').styler();
+
+        //     $(window).on('scroll', function(){
+
+        //         if($(window).scrollTop()>0){
+        //             if(!$("header").hasClass("scrolled")){
+        //                 $("header").addClass("scrolled");
+        //             }
+        //         }else{
+        //             if($("header").hasClass("scrolled")){
+        //                 $("header").removeClass("scrolled");
+        //             }
+        //         }
+
+        //     });
+
+        });
+    </script>
+
 </body>
 </html>
