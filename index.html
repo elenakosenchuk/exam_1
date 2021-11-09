@@ -35,7 +35,7 @@
                 <div class="btn_wrapper"><button class="btn_small" type="submit">Search<svg class="btn_search"><use xlink:href="assets/images/sprite.svg#search"></use></svg></button></div>
             </form>
             <p class="header_text">Scroll down</p>            
-        </div>
+        </div>        
     </header>
 
     <div id="mobile_menu_wrap">
@@ -178,26 +178,27 @@
         $(".hamburger, #page_overlay").on('click', function(){
             $(".hamburger").toggleClass("is-active");            
             $("body").toggleClass("open");
+        });        
+
+        $(function() {
+        menu_top = $('.menu').offset().top;        // запоминаем положение меню
+        $(window).scroll(function () {             // отслеживаем событие прокрутки страницы
+            if ($(window).scrollTop() > menu_top) {  // если прокрутка дошла до меню
+            if ($('.menu').css('position') != 'fixed') {  // проверяем, если меню еще не зафиксировано
+                $('.menu').css('position','fixed');  // задаем блоку меню свойство position = fixed
+                $('.menu').css('top','0');           // положение в самом верху
+                $('.content').css('margin-top','80px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
+            }
+            } else {                                 // прокрутка страницы обратно вверх достигла место "перехода" меню
+            if ($('.menu').css('position') == 'fixed') {  // если меню зафиксировано
+                $('.menu').css('position','');
+                $('.menu').css('top','');
+                $('.content').css('margin-top','');
+            }
+            }
         });
-
-
-        //     $('input, select').styler();
-
-        //     $(window).on('scroll', function(){
-
-        //         if($(window).scrollTop()>0){
-        //             if(!$("header").hasClass("scrolled")){
-        //                 $("header").addClass("scrolled");
-        //             }
-        //         }else{
-        //             if($("header").hasClass("scrolled")){
-        //                 $("header").removeClass("scrolled");
-        //             }
-        //         }
-
-        //     });
-
         });
+    });
     </script>
 
 </body>

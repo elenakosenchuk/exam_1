@@ -165,12 +165,14 @@ img {
                 transform: rotate(45deg);
             }
         }
-    }
+    }    
 }
 
-.menu {
+.menu {    
     background-color: #5474fd;
-    height: 80px;
+    height: 80px;    
+    width: 100%;    
+    z-index: 10;    
     .menu_container {        
         display: flex;
         justify-content: space-between;

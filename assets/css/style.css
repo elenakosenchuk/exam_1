@@ -276,6 +276,8 @@ img {
 .menu {
   background-color: #5474fd;
   height: 80px;
+  width: 100%;
+  z-index: 10;
 }
 .menu .menu_container {
   display: flex;
