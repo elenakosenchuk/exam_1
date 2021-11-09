@@ -28,7 +28,7 @@
     <meta property="og:description" content="You could have an unforgotten trip with us">
     <meta property="og:url" content="https://elenakosenchuk.github.io/exam_1/">
     <meta property="og:site_name" content="Bhromaon">
-    <meta property="og:image" content="https://elenakosenchuk.github.io/exam_1/assets/images/open-graph-img.jpg"> -->
+    <meta property="og:image" content="https://elenakosenchuk.github.io/exam_1/assets/images/open-graph-img.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -80,18 +80,17 @@
     </div>
     <div id="page_overlay"></div>
 
-
     <div class="menu">
         <div class="container menu_container">
             <div class="logo menu_logo">
                 <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
             </div>
-            <nav id="main_menu">
-                <ul class="menu_list">
-                    <li class="menu_list-item"><a href="#">Who we are</a></li>
-                    <li class="menu_list-item"><a href="#">What we do</a></li>
-                    <li class="menu_list-item"><a href="#">Travel with us</a></li>
-                    <li class="menu_list-item"><a href="#">Contact us</a></li>                
+            <nav id="main_menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="menu_list" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li class="menu_list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a href="#" itemprop="url">Who we are</a><meta itemprop="name" content="Who we are" /></li>
+                    <li class="menu_list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a href="#" itemprop="url">What we do</a><meta itemprop="name" content="What we do" /></li>
+                    <li class="menu_list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a href="#" itemprop="url">Travel with us</a><meta itemprop="name" content="Travel with us" /></li>
+                    <li class="menu_list-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a href="#" itemprop="url">Contact us</a><meta itemprop="name" content="Contact us" /></li>                
                 </ul>
             </nav>
 
@@ -207,7 +206,7 @@
             if ($('.menu').css('position') != 'fixed') {  // проверяем, если меню еще не зафиксировано
                 $('.menu').css('position','fixed');  // задаем блоку меню свойство position = fixed
                 $('.menu').css('top','0');           // положение в самом верху
-                $('.content').css('margin-top','500px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
+                $('.content').css('margin-top','460px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
             }
             } else {                                 // прокрутка страницы обратно вверх достигла место "перехода" меню
             if ($('.menu').css('position') == 'fixed') {  // если меню зафиксировано
