@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Host: https://elenakosenchuk.github.io
-Sitemap: 
+Sitemap: https://elenakosenchuk.github.io/exam_1/sitemap.xml
