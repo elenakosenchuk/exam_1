@@ -73,7 +73,8 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 175px);
+    // height: calc(100vh - 175px);
+    height: calc(100vh - 80px);
     padding: 260px 0 0 0;    
     .header_container {
         display: flex;
@@ -192,12 +193,12 @@ img {
                         width: 100%;
                         height: 100%;
                         padding: 32px 10px;
-                        transition: all .3s ease;
-                        &:hover {
-                            background: -webkit-linear-gradient(#DA70D6, #4B0082);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }                                                
+                        transition: all .5s ease;
+                        &:hover {                            
+                            background:radial-gradient(ellipse at 50% 50%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 80%);
+                            border-radius: 50px;
+                        }                      
+                                                              
                     }
                 }
             }
@@ -339,7 +340,12 @@ img {
             .circle {
                 position: absolute;
                 width: 120%;
-                top: -80%;
+                top: -80%;                
+            }
+            .search_circle {
+                left: 65%;
+            }
+            .check_circle {
                 left: 70%;
             }
                                   
@@ -429,14 +435,14 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 230px 0 105px 0;    
+    padding: 230px 0 105px 0;        
 }
 .content_block-rigth {   
     background-color: #f7c7c7;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 230px 0 105px 0;
+    padding: 230px 0 105px 0;    
     .container_block-right {
         display: flex;
         justify-content: flex-end;
@@ -505,17 +511,17 @@ footer {
         justify-content: center;
         align-items: center;
         .footer_logo {
-            width: 15%;
+            width: 165px;
             margin-bottom: 10px;            
         }
         .footer_text {
             font-family: "Josefin Sans";
             line-height: 26px;
             letter-spacing: 1px;
-            margin-bottom: 25px;  
+            margin-bottom: 20px;  
         }
         .networks {
-            width: 16%;        
+            width: 180px;        
             .networks_list {
                 display: flex;
                 justify-content: space-between;                                    
@@ -525,6 +531,7 @@ footer {
                     a {
                         color: #fff;
                         width: 100%;
+                        
                     &:hover {
                         color: #5474fd;
                         }

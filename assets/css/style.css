@@ -179,7 +179,7 @@ img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 175px);
+  height: calc(100vh - 80px);
   padding: 260px 0 0 0;
 }
 .header_section .header_container {
@@ -301,12 +301,11 @@ img {
   width: 100%;
   height: 100%;
   padding: 32px 10px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .menu .menu_container #main_menu .menu_list .menu_list-item a:hover {
-  background: -webkit-linear-gradient(#DA70D6, #4B0082);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: radial-gradient(ellipse at 50% 50%, #00ffeb 0%, #073abb 80%);
+  border-radius: 50px;
 }
 
 #hamburger_menu {
@@ -448,6 +447,11 @@ img {
   position: absolute;
   width: 120%;
   top: -80%;
+}
+.icons .icons_list .icons_list-item .search_circle {
+  left: 65%;
+}
+.icons .icons_list .icons_list-item .check_circle {
   left: 70%;
 }
 .icons .icons_list .icons_list-item a {
@@ -601,17 +605,17 @@ footer .footer_content {
   align-items: center;
 }
 footer .footer_content .footer_logo {
-  width: 15%;
+  width: 165px;
   margin-bottom: 10px;
 }
 footer .footer_content .footer_text {
   font-family: "Josefin Sans";
   line-height: 26px;
   letter-spacing: 1px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 footer .footer_content .networks {
-  width: 16%;
+  width: 180px;
 }
 footer .footer_content .networks .networks_list {
   display: flex;
