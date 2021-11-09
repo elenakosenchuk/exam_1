@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhromaon</title>
+    <meta name="description" content="On-line food shopping">    
+    <meta http-equiv="Content-Type" lang="en" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -15,6 +18,23 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bhromaon - Travel with us">
+    <meta property="og:description" content="You could have an unfogotten trip with us">
+    <meta property="og:url" content="https://elenakosenchuk.github.io">
+    <meta property="og:site_name" content="Bhromaon">
+    <!-- <meta property="og:image" content="https://elenakosenchuk.github.io/24_seo_cahee/assets/images/og-image.jpg"> -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:title" content="Bhromaon - Travel with us">
+    <meta name="twitter:description" content="You could have an unfogotten trip with us">
+    <!-- <meta name="twitter:image" content="https://elenakosenchuk.github.io/24_seo_cahee/assets/images/og-image.jpg"> -->
 
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/font-icons/css/my_icons.css">
@@ -43,7 +63,7 @@
             <div class="mobile_logo">
                 <a href="#"><img src="assets/images/logo-header.png" alt="Site Logo"></a>
             </div>
-            <button class="hamburger hamburger--spring is-active" type="button">
+            <button class="hamburger hamburger--spring" type="button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
@@ -180,14 +200,14 @@
             $("body").toggleClass("open");
         });        
 
-        $(function() {
+        
         menu_top = $('.menu').offset().top;        // запоминаем положение меню
         $(window).scroll(function () {             // отслеживаем событие прокрутки страницы
             if ($(window).scrollTop() > menu_top) {  // если прокрутка дошла до меню
             if ($('.menu').css('position') != 'fixed') {  // проверяем, если меню еще не зафиксировано
                 $('.menu').css('position','fixed');  // задаем блоку меню свойство position = fixed
                 $('.menu').css('top','0');           // положение в самом верху
-                $('.content').css('margin-top','80px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
+                $('.content').css('margin-top','500px'); // делаем отступ, чтобы контент не "скакал" в момент фиксации меню
             }
             } else {                                 // прокрутка страницы обратно вверх достигла место "перехода" меню
             if ($('.menu').css('position') == 'fixed') {  // если меню зафиксировано
@@ -196,7 +216,7 @@
                 $('.content').css('margin-top','');
             }
             }
-        });
+        
         });
     });
     </script>
