@@ -236,6 +236,20 @@
     display: none;
   }
 
+  .choose .content_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 20% 20%;
+  }
+  .choose .content_wrapper .text_block {
+    grid-area: 1/1/2/2;
+  }
+  .choose .content_wrapper .pic_block-first {
+    grid-area: 2/1/3/2;
+  }
+  .choose .content_wrapper .pic_block:last-child {
+    grid-area: 3/1/4/2;
+  }
+
   .icons .icons_list .icons_list-item a {
     font-size: 16px;
   }
