@@ -549,6 +549,7 @@ img {
   line-height: 26px;
   text-transform: capitalize;
   text-align: center;
+  display: block;
 }
 .icons .icons_list .icons_list-item a .ic {
   width: 70px;
